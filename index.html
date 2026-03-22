@@ -20,8 +20,8 @@
       <div class="menu">
         <ul>
           <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
           <li><a href="#">Plans</a></li>
-          <li><a href="#">Services</a></li>
           <li><a href="#">Contact</a></li>
         </ul>
       </div>
@@ -106,7 +106,7 @@
               <img src="assets/twotwo.jpg" />
               <img src="assets/threethree.jpg" />
               <img src="assets/fourfour.jpg" />
-              <img src="assets/fivefive.jpg" /> 
+              <img src="assets/fivefive.jpg" />
               <img src="assets/oneone.jpg" />
               <img src="assets/twotwo.jpg" />
               <img src="assets/threethree.jpg" />
@@ -115,6 +115,90 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- ------------------------------------------------- -->
+
+    <section class="about" id="services">
+      <div class="about-container">
+        <h2
+          style="
+            text-align: center;
+            color: goldenrod;
+            font-size: 4rem;
+            font-family: Fjalla One;
+          "
+        >
+          Our Services
+        </h2>
+        <p>
+          At <span style="color: goldenrod">Apex Asylum Gym</span>, we offer a
+          range of fitness services designed to help you achieve your goals
+          faster.<br> Whether you're a beginner or an advanced athlete, our programs
+          are tailored to maximize your performance and results.
+        </p>
+        <div class="features">
+          <div>
+            <h3>Personal Training</h3>
+            <ul>
+              <li>✔ One-on-One Coaching</li>
+              <li>✔ Customized Workout Plans</li>
+              <li>✔ Proper Form Guidance</li>
+              <li>✔ Faster Results</li>
+              <li>✔ Injury Prevention</li>
+              <li>✔ Goal Tracking</li>
+              <li>✔ Dedicated Support</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Strength Training</h3>
+            <ul>
+              <li>✔ Muscle Building Programs</li>
+              <li>✔ Free Weights & Machines</li>
+              <li>✔ Progressive Overload</li>
+              <li>✔ Powerlifting Basics</li>
+              <li>✔ Functional Strength</li>
+              <li>✔ Full Body Workouts</li>
+              <li>✔ Performance Boost</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Cardio & Fat Loss</h3>
+            <ul>
+              <li>✔ HIIT Workouts</li>
+              <li>✔ Treadmill & Cycling</li>
+              <li>✔ Fat Burning Plans</li>
+              <li>✔ Endurance Training</li>
+              <li>✔ Calorie Tracking</li>
+              <li>✔ Weight Loss Support</li>
+              <li>✔ Energy Boosting Sessions</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Diet & Nutrition</h3>
+            <ul>
+              <li>✔ Personalized Diet Plans</li>
+              <li>✔ Meal Planning</li>
+              <li>✔ Supplement Guidance</li>
+              <li>✔ Fat Loss Diets</li>
+              <li>✔ Muscle Gain Nutrition</li>
+              <li>✔ Healthy Eating Habits</li>
+              <li>✔ Regular Monitoring</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bmi">
+          <h3>Calculate Your BMI Here:</h3>
+          <form id="bmi-form">
+            <p><label for="height">Height (m):</label> <input placeholder="Enter your Height in metres" type="number" id="height" name="height" required step="0.01"></p>
+            <p><label for="weight">Weight (kg):</label> <input placeholder="Enter your Weight in kilograms" type="number" id="weight" name="weight" required step="0.1"></p>
+            <button id="bmi-btn" type="submit">Calculate BMI</button>
+          </form>
+          <p id="results"></p>
+        </div>
+
       </div>
     </section>
 
