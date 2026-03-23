@@ -54,3 +54,74 @@ bmiform.addEventListener('submit', (e) => {
                 
 }
 });
+
+function goToPlans() {
+    const plans = document.getElementById("plans");
+
+    plans.scrollIntoView({ behavior: "smooth" });
+
+    btns = document.querySelectorAll(".plan button");
+
+    // btns.forEach((btn) => {
+    //     btn.style.boxShadow = "0 0 30px goldenrod";
+    // })
+
+    // setTimeout(() => {
+    //      btns.forEach((btn) => {
+    //     btn.style.boxShadow = "none";
+    // })
+    // }, 1500);
+
+    let clrCount = 1;
+    let interval = setInterval(() => {
+        btns.forEach((btn) => {
+            const clr = clrCount % 2 === 0 ? "green" : "transparent";
+            btn.style.boxShadow = `0 0 30px ${clr}`;
+        });
+        clrCount++; 
+    }, 500);
+
+    setTimeout(() => {
+        clearInterval(interval);
+        btns.forEach((btn) => {
+            btn.style.boxShadow = "none";
+        });
+    }, 3000)
+}
+
+// function goToPlans() {
+//     const plans = document.getElementById("plans");
+
+//     plans.scrollIntoView({ behavior: "smooth" });
+
+//     const btns = document.querySelectorAll(".plan button");
+
+//     // wait for scroll to finish
+//     setTimeout(() => {
+
+//         let count = 0;
+
+//         const interval = setInterval(() => {
+//             btns.forEach((btn) => {
+//                 btn.style.boxShadow =
+//                     count % 2 === 0
+//                         ? "0 0 30px green"
+//                         : "0 0 30px transparent";
+//             });
+
+//             count++;
+
+//             // stop after few blinks
+//             if (count === 6) {
+//                 clearInterval(interval);
+//                 btns.forEach((btn) => {
+//                     btn.style.boxShadow = "none";
+//                 });
+//             }
+
+//         }, 400);
+
+//     }, 700); // delay so scroll completes
+// }
+
+document.getElementById("planNavBtn").addEventListener("click", goToPlans);
