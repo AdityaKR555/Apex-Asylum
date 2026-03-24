@@ -405,7 +405,7 @@ body{
 
 #contact {
     width: 100%;
-    height: 137vh;
+    height: 100vh;
     background-image: url(assets/general\ bg.png);
     background-size: cover;
     background-position: center;
@@ -476,6 +476,7 @@ body{
     font-size: 1.7rem;
     text-shadow: 0px 0px 5px black;
     text-align: end;
+    padding-right: 0.5rem;
 }
 
 #joinForm {
@@ -538,4 +539,60 @@ body{
     color: black;
     /* border: 2px solid black; */
     box-shadow: 0px 0px 15px black;
+}
+
+
+/* --------------------------- */
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.popup.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.popup-content {
+    background: black;  
+    border: 1px solid goldenrod;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 0 20px goldenrod;
+}
+
+.popup-content h3 {
+    color: goldenrod;
+}
+
+.popup-content p {
+    color: whitesmoke;
+    margin: 1rem 0;
+}
+
+.popup-content button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    border: 2px solid goldenrod;
+    background: transparent;
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.popup-content button:hover {
+    background: goldenrod;
+    color: black;
 }

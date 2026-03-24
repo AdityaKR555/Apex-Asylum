@@ -125,3 +125,60 @@ function goToPlans() {
 // }
 
 document.getElementById("planNavBtn").addEventListener("click", goToPlans);
+
+const form = document.getElementById("joinForm");
+
+// form.addEventListener("submit", function (e) {
+//     e.preventDefault();
+
+//     const name = document.getElementById("name").value.trim();
+//     const email = document.getElementById("email").value.trim();
+//     const phone = document.getElementById("phone").value.trim();
+//     const plan = document.getElementById("plan").value;
+
+//     // success message
+//     // alert(`Thanks ${name}! You have selected the ${plan} plan. We will contact you soon.`);
+
+//     // reset form
+//     form.reset();
+    
+// });
+
+function selectPlan(planName) {
+    document.getElementById("contact").scrollIntoView({ behavior: "smooth" });
+    // document.getElementById("plan").value = planName;
+     setTimeout(() => {
+        document.getElementById("plan").value = planName;
+    }, 500);
+}
+
+
+// ------------------
+
+const popup = document.getElementById("popup");
+const popupMsg = document.getElementById("popup-msg");
+
+form.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const plan = document.getElementById("plan").value;
+
+    popupMsg.innerText = `Thanks ${name}! You selected ${plan} plan.`;
+
+    popup.classList.add("active");
+
+    form.reset();
+});
+
+function closePopup() {
+    popup.classList.remove("active");
+}
+
+popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+        closePopup();
+    }
+});

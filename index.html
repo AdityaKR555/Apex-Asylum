@@ -257,7 +257,7 @@
               <li>✔ Locker Facility</li>
               <li>✔ Limited Support</li>
             </ul>
-            <button>Join Now</button>
+            <button onclick="selectPlan('basic')">Join Now</button>
           </div>
 
           <!-- Standard (Highlight this) -->
@@ -271,7 +271,7 @@
               <li>✔ Diet Suggestions</li>
               <li>✔ Priority Support</li>
             </ul>
-            <button>Join Now</button>
+            <button onclick="selectPlan('standard')">Join Now</button>
           </div>
 
           <!-- Premium -->
@@ -285,7 +285,7 @@
               <li>✔ Progress Tracking</li>
               <li>✔ 24/7 Support</li>
             </ul>
-            <button>Join Now</button>
+            <button onclick="selectPlan('premium')">Join Now</button>
           </div>
         </div>
         <p class="plans-note below">
@@ -330,9 +330,36 @@
           <div id="containerForm">
             <h4>Join Us</h4>
             <form action="" id="joinForm">
-              <p><label for="name">Name: </label><input type="text" id="name" name="name" required placeholder="Enter Your Name"></p>
-              <p><label for="email">Email: </label><input type="email" id="email" name="email" required placeholder="Enter Your Email"></p>
-              <p><label for="phone">Phone: </label><input type="tel" id="phone" name="phone" required placeholder="Enter Your Phone Number"></p>
+              <p>
+                <label for="name">Name: </label
+                ><input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  placeholder="Enter Your Name"
+                />
+              </p>
+              <p>
+                <label for="email">Email: </label
+                ><input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="Enter Your Email"
+                />
+              </p>
+              <p>
+                <label for="phone">Phone: </label
+                ><input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  placeholder="Enter Your Phone Number"
+                />
+              </p>
               <!-- membership plan: -->
               <p>
                 <label for="plan">Membership Plan: </label>
@@ -345,6 +372,16 @@
               </p>
               <p><button type="submit">Join Now</button></p>
             </form>
+
+            <!-- -------------------------------- -->
+
+            <div id="popup" class="popup">
+              <div class="popup-content">
+                <h3>Success!</h3>
+                <p id="popup-msg">You have successfully joined.</p>
+                <button onclick="closePopup()">OK</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
