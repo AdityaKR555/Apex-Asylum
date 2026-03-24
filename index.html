@@ -299,7 +299,54 @@
 
     <section id="contact">
       <div class="contact-container">
-        
+        <h2
+          style="
+            text-align: center;
+            color: goldenrod;
+            font-size: 4rem;
+            font-family: Fjalla One;
+          "
+        >
+          Contact Us
+        </h2>
+        <div class="info-container">
+          <div id="address">
+            <h4>VISIT US</h4>
+            <p><span>Phone:</span> (+91) 98762 03455</p>
+            <p><span>Email:</span> apexasylum@gmail.com</p>
+            <p><span>Address:</span> RBR-101, Bgs, BR</p>
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57657.72279413029!2d86.08383374366944!3d25.417939931825316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f21acfd71c503d%3A0xb63ebca77635ae58!2sBegusarai%2C%20Bihar!5e0!3m2!1sen!2sin!4v1774360172621!5m2!1sen!2sin"
+                width="90%"
+                height="300"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div id="containerForm">
+            <h4>Join Us</h4>
+            <form action="" id="joinForm">
+              <p><label for="name">Name: </label><input type="text" id="name" name="name" required placeholder="Enter Your Name"></p>
+              <p><label for="email">Email: </label><input type="email" id="email" name="email" required placeholder="Enter Your Email"></p>
+              <p><label for="phone">Phone: </label><input type="tel" id="phone" name="phone" required placeholder="Enter Your Phone Number"></p>
+              <!-- membership plan: -->
+              <p>
+                <label for="plan">Membership Plan: </label>
+                <select name="plan" id="plan" required>
+                  <option value="" disabled selected>Select a plan</option>
+                  <option value="basic">Basic - ₹999/month</option>
+                  <option value="standard">Standard - ₹1999/month</option>
+                  <option value="premium">Premium - ₹2999/month</option>
+                </select>
+              </p>
+              <p><button type="submit">Join Now</button></p>
+            </form>
+          </div>
+        </div>
       </div>
     </section>
 
