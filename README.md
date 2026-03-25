@@ -3,6 +3,12 @@
 A fully responsive gym landing page built with pure **HTML**, **CSS**, and **vanilla JavaScript**. Designed to showcase membership plans, services, a BMI calculator, and a contact/join form — all with a bold dark aesthetic.
  
 ---
+
+## 🔥 Live Preview
+ 
+> https://adityakr555.github.io/Apex-Asylum/
+ 
+---
  
  
 ## 🚀 Features
