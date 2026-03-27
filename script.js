@@ -62,16 +62,6 @@ function goToPlans() {
 
     btns = document.querySelectorAll(".plan button");
 
-    // btns.forEach((btn) => {
-    //     btn.style.boxShadow = "0 0 30px goldenrod";
-    // })
-
-    // setTimeout(() => {
-    //      btns.forEach((btn) => {
-    //     btn.style.boxShadow = "none";
-    // })
-    // }, 1500);
-
     let clrCount = 1;
     let interval = setInterval(() => {
         btns.forEach((btn) => {
@@ -86,6 +76,7 @@ function goToPlans() {
         btns.forEach((btn) => {
             btn.style.boxShadow = "none";
         });
+        clrCount = 1;
     }, 3000)
 }
 
